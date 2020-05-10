@@ -20,7 +20,7 @@ render() {
   return(
     <header id="top">
       <div className="header-content">
-        <a href="#top">&#60;Nathan &#47;&#62;</a>
+        <a href="#top">Nathan Atherton</a>
         <nav className = {`${isExpanded ? "is-expanded" : ""}`}>
           <a href="#about">About</a>
           <a href="#work">Work</a>

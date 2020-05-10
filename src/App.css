@@ -37,7 +37,7 @@ header {
 
 
 /* underline animation on hover */
-.header-content a, #about a {
+.header-content a, #about a, #contact a {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -46,7 +46,7 @@ header {
   position: relative;
   overflow: hidden;
 }
-.header-content a:before, #about a:before {
+.header-content a:before, #about a:before, #contact a:before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -62,7 +62,7 @@ header {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.header-content a:hover:before, .header-content a:focus:before, .header-content a:active:before, #about a:hover:before, #about a:focus:before, #about a:active:before  {
+.header-content a:hover:before, .header-content a:focus:before, .header-content a:active:before, #about a:hover:before, #about a:focus:before, #about a:active:before, #contact a:hover:before, #contact a:focus:before, #contact a:active:before  {
   right: 0;
 }
 
@@ -104,13 +104,13 @@ nav {
   padding: 1em 0;
 }
 
-#about a {
+#about a, #contact a {
   text-decoration: none;
   color: #0b1da0;
   font-weight: bolder;
 }
 
-#about a:before {
+#about a:before, #contact a:before {
   background: #0b1da0;
 }
 
@@ -292,6 +292,25 @@ input[type="submit"]:hover {
 input[type="submit"]:hover, input[type="submit"]:focus, input[type="submit"]:visited {
   outline: none;
 }
+
+#contact h2 {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 095)), url("assets/laptop-header.jpg");
+  color: #fff;
+  padding: 20px;
+  -webkit-box-shadow: 0 0.125rem 0.5rem rgba(131, 131, 131, 0.3), 0 0.0625rem 0.125rem rgba(114, 114, 114, 0.2);
+  box-shadow: 0 0.125rem 0.5rem rgba(131, 131, 131, 0.3), 0 0.0625rem 0.125rem rgba(114, 114, 114, 0.2);
+}
+
+footer a {
+  color: #fff;
+  padding: 0 5px;
+}
+
 
 @media only screen and (max-width: 1200px) {
   .header-content {
