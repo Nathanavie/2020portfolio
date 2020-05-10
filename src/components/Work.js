@@ -5,7 +5,8 @@ import projects from '../assets/projects.json';
 const Work = props => {
     return (
       <>
-        <div className="projectContainer">{projects.map (project => <Content {...project} />)}</div>
+        <h1 className="ProjectsTitle">Projects</h1>
+        <div id="work" className="projectContainer">{projects.map (project => <Content {...project} />)}</div>
       </>
     )
 }

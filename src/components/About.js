@@ -12,7 +12,7 @@ class Intro extends React.Component {
           <p>{data[1].wording}</p>
           <p>{data[1].freelance}<a href="#contact">throw me a line.</a></p>
         </div>
-        <img src={nathan} alt="nathan" />
+        <img src={nathan} alt="nathan" className="nathanFaceQ" />
       </section>
     )
   }
