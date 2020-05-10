@@ -1,0 +1,16 @@
+[
+ {
+     "title": "intro",
+     "wording": "Hi! I am Nathan and I am a front-end web developer!",
+     "wording2": "",
+     "wording3": "",
+     "wording4": ""
+ },
+ {
+     "title": "about",
+     "wording": "I'm Nathan, I am a web developer based in Manchester, with one year commercial experience under my belt!",
+     "wording2": "I have been developing websites since 2016 and I have a first class degree in Web Design and Development.",
+     "wording3": "I have experience in using, HTML5, CSS3, and JavaScript ranging from JQuery all the way to ReactJS, React Native, and GatsbyJS!",
+     "wording4": "I am available for freelance work, if you would like to use my services be sure to <a href=\"#contact\">throw me a line.</a>"
+ }
+]
