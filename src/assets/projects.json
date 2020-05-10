@@ -3,7 +3,7 @@
     "id":1,
     "name": "News By Nathan",
     "desc": "A News website created in ReactJS, utilising the NewsAPI to collate news stories based on country or keyword",
-    "img": "https://www.searchenginewatch.com/wp-content/uploads/2018/10/admin-ajax.jpeg",
+    "img": "https://raw.githubusercontent.com/Nathanavie/2020portfolio/master/src/assets/news-by-nathan.png",
     "GitHubLink": "https://github.com/Nathanavie/react-news-articles",
     "DemoLink": "https://news-by-nathan.netlify.app/"
   },
@@ -11,7 +11,7 @@
     "id":2,
     "name": "Guess The Premier League Footballer",
     "desc": "A pair project, that is still WIP, utlising the Wikipedia API to create a game guessing the premier league footballer based on appearances, goals and games played.",
-    "img": "../assets/Wiki-api.png",
+    "img": "https://raw.githubusercontent.com/Nathanavie/2020portfolio/master/src/assets/Wiki-api.png",
     "GitHubLink": "https://github.com/nouriach/wiki-api-game",
     "DemoLink": "https://guess-the-premier-league-player.netlify.app/"
   },
@@ -19,7 +19,7 @@
     "id":3,
     "name": "Wigan Pool League Merits",
     "desc": "A website that automatically updates as a google sheet is updated, using the sheet.co service to create a RESTFUL API from a Google Sheet.",
-    "img": "../assets/PoolMerits.png",
+    "img": "https://raw.githubusercontent.com/Nathanavie/2020portfolio/master/src/assets/PoolMerits.png",
     "GitHubLink": "https://github.com/Nathanavie/PoolMerits",
     "DemoLink": "https://wiganpoolmerits.netlify.app/"
   },
@@ -27,7 +27,7 @@
     "id":4,
     "name": "GIT Animated Tutorial",
     "desc": "My Dissertation Project that uses CSS Animations to deliver a basic tutorial of how to use GIT well enough to make a repo and push to it.",
-    "img": "../assets/GitTutorial.png",
+    "img": "https://raw.githubusercontent.com/Nathanavie/2020portfolio/master/src/assets/GitTutorial.png",
     "GitHubLink": "https://github.com/Nathanavie/Git-Tutorial",
     "DemoLink": "https://nathanatherton-git.netlify.app/"
   }

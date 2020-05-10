@@ -162,6 +162,58 @@ nav {
   filter: drop-shadow(0 0.0625rem 0.0625rem rgba(0, 0, 0, .4));
 }
 
+.projectContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project {
+  height: 15em;
+  width: 45.5%;
+  background-size: cover;
+  color: #fff;
+  padding: 2%;
+  transition: 0.4s;
+  border: solid 0.5px #fff;
+}
+
+.project:hover {
+  box-shadow:	0 0.125rem 0.5rem rgba(0, 0, 0, .3), 0 0.0625rem 0.125rem rgba(0, 0, 0, .2);
+  transform: scale(1.01);
+}
+
+.project h3 {
+  text-align: center;
+  margin-top: 10px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 20px;
+}
+
+.project p {
+  margin-top: 10px;
+}
+
+.project .links {
+  width: 50%;
+  margin: 16% auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project .links a {
+  text-decoration: none;
+  color: #fff;
+  border-radius: 15px;
+  border: solid 0.5px #fff;
+  padding: 10px;
+  transition: 0.4s;
+}
+
+.project .links a:hover {
+  background: #fff;
+  color: #000;
+}
+
 @media only screen and (max-width: 1200px) {
   .header-content {
     max-width: 100%;

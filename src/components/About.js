@@ -1,5 +1,6 @@
 import React from 'react';
 import data from '../assets/data.json'
+import nathan from '../assets/NathanFaceQ.png'
 
 class Intro extends React.Component {
 
@@ -11,6 +12,7 @@ class Intro extends React.Component {
           <p>{data[1].wording}</p>
           <p>{data[1].freelance}<a href="#contact">throw me a line.</a></p>
         </div>
+        <img src={nathan} alt="nathan" />
       </section>
     )
   }
