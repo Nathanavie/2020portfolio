@@ -4,8 +4,9 @@
 
 html,body {
   font-family: 'Roboto', sans-serif;
-  background: grey;
   user-select: none;
+  line-height: 1.5;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -36,7 +37,7 @@ header {
 
 
 /* underline animation on hover */
-.header-content a {
+.header-content a, #about a {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -45,7 +46,7 @@ header {
   position: relative;
   overflow: hidden;
 }
-.header-content a:before {
+.header-content a:before, #about a:before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -61,7 +62,7 @@ header {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.header-content a:hover:before, .header-content a:focus:before, .header-content a:active:before {
+.header-content a:hover:before, .header-content a:focus:before, .header-content a:active:before, #about a:hover:before, #about a:focus:before, #about a:active:before  {
   right: 0;
 }
 
@@ -94,30 +95,72 @@ nav {
   color: white;
 }
 
-
-.intro-text h1 {
+.intro-text {
   font-size: 2rem;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  animation:
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
 }
 
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+#about {
+  width: 100%;
+  min-height: 40em;
+  padding-top: 1em;
 }
 
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: #fff; }
+#about a {
+  text-decoration: none;
+  color: #0b1da0;
+  font-weight: bolder;
 }
 
+#about a:before {
+  background: #0b1da0;
+}
+
+.about-text {
+  max-width: 75%;
+  margin: 1em auto 0 auto;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  padding: 1em;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.about-text:hover {
+  box-shadow: 0 0px 12px rgba(0, 0, 0, 0.15), 0 4px 10px rgba(0, 0, 0, 0.17)
+}
+
+.about-text p {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.about-text h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.box {
+	position: relative;
+	max-width: 75%;
+	background-color: #fff;
+	padding: 1.125em 1.5em;
+	font-size: 1.25em;
+	border-radius: 1rem;
+  box-shadow:	0 0.125rem 0.5rem rgba(0, 0, 0, .3), 0 0.0625rem 0.125rem rgba(0, 0, 0, .2);
+}
+
+.box:before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: -5%;
+  left: 1.5em;
+  border: .75rem solid transparent;
+  border-bottom: none;
+  border-top-color: #fff;
+  filter: drop-shadow(0 0.0625rem 0.0625rem rgba(0, 0, 0, .4));
+}
 
 @media only screen and (max-width: 1200px) {
   .header-content {
@@ -172,4 +215,11 @@ nav {
     padding: 10px 0;
   }
 
+  .intro-text {
+    font-size: 1rem;
+  }
+
+  #intro {
+    height: 15em;
+  }
 }

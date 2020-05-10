@@ -9,10 +9,11 @@ class Intro extends React.Component {
   render(){
     return (
       <section id="about" className="intro">
-      <p>{data[1].wording}</p>
-      <p>{data[1].wording1}</p>
-      <p>{data[1].wording2}</p>
-      <p>{data[1].wording3}</p>
+        <div className="about-text sb2 box">
+          <h1>{data[1].title}</h1>
+          <p>{data[1].wording}</p>
+          <p>{data[1].freelance}<a href="#contact">throw me a line.</a></p>
+        </div>
       </section>
     )
   }
