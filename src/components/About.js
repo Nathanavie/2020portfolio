@@ -2,9 +2,6 @@ import React from 'react';
 import data from '../assets/data.json'
 
 class Intro extends React.Component {
-  componentDidMount(){
-    console.log(data[0])
-  }
 
   render(){
     return (
