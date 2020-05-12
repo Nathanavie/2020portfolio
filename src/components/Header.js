@@ -1,4 +1,5 @@
-import React from 'react';;
+import React from 'react';
+import CV from '../assets/NathanCV.pdf';
 
 class Header extends React.Component {
   constructor(props) {
@@ -25,6 +26,7 @@ render() {
           <a href="#about">About</a>
           <a href="#work">Work</a>
           <a href="#contact">Contact</a>
+          <a href={CV} target="_blank" rel="noopener noreferrer">CV</a>
         </nav>
         <i
           className="fa fa-bars"

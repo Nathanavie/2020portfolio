@@ -6,7 +6,9 @@ const Work = props => {
     return (
       <>
         <h1 id="work" className="ProjectsTitle">Projects</h1>
-        <div className="projectContainer">{projects.map (project => <Content {...project} />)}</div>
+        <div className="projectContainer">
+          <Content projects={projects} />
+        </div>
       </>
     )
 }

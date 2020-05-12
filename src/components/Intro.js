@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactTypingEffect from 'react-typing-effect';
 import data from '../assets/data.json'
-import img from '../assets/laptop-header.jpg'
 
 class Intro extends React.Component {
   render(){
