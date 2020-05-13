@@ -169,19 +169,26 @@ nav {
 }
 
 .projectContainer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  display: grid;
+  align-items: center;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
 }
 
 .project {
-  width: 45.5%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 5em 15em 5em;
+  width: 15em;
+  min-height: 25em;
   background-size: cover;
   color: #fff;
-  padding: 2%;
+  padding: 9%;
   transition: 0.4s;
   border: solid 0.5px #fff;
+  border-radius: 25px;
   background-position: top;
+  margin: 0 auto;
 }
 
 .project:hover {
@@ -194,6 +201,7 @@ nav {
   margin-top: 10px;
   font-family: 'Ubuntu', sans-serif;
   font-size: 20px;
+  min-height: 3em;
 }
 
 .project p {
@@ -201,7 +209,7 @@ nav {
 }
 
 .project .links {
-  width: 50%;
+  width: 75%;
   margin: 16% auto 0 auto;
   display: flex;
   justify-content: space-between;
@@ -381,16 +389,6 @@ footer a {
 
   #intro {
     height: 15em;
-  }
-
-  .project {
-    height: auto;
-    width: 100%;
-    padding: 2% 6%;
-  }
-
-  .project .links {
-    margin-bottom: 5%;
   }
   form{
     width: 95%;
