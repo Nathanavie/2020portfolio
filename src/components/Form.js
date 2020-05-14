@@ -1,39 +1,109 @@
 import React from 'react';
+import emailjs from 'emailjs-com';
 
-const Form = props => {
-  return(
+class Form extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      name: '',
+      email: '',
+      message: '',
+      emailSent: false,
+      emailSuccess: null,
+    }
+  }
 
-      <form action="https://www.enformed.io/algg8tco" method="POST">
-        <div className="top-fields">
-          <div>
-            <label>Name</label>
-            <input
-              name="first-name"
-              type="text"
+  sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('gmail', 'template_UAlwakRP', e.target, 'user_zW5A3HCHvYgRpgseVZ7bO')
+      .then((result) => {
+          console.log('Email sent', result.text);
+          this.setState({
+            emailSuccess: true,
+            name: '',
+            email: '',
+            message: '',
+          })
+      }, (error) => {
+          console.log(error.text);
+          this.setState({
+            emailSuccess: false,
+          })
+      });
+    }
+
+    handleChange = event => {
+      const { name, value } = event.target
+
+      this.setState({
+        [name]: value,
+      })
+    }
+
+
+  render() {
+    let emailSuccessMessage = null;
+    let emailMessageColour;
+
+    if (this.state.emailSuccess) {
+      emailSuccessMessage = "Email sent successfully! You should hear back from me soon.";
+      emailMessageColour = "green";
+    }
+
+    if (!this.state.emailSuccess){
+      emailSuccessMessage = "Error sending email, please try again!";
+      emailMessageColour = "red";
+    }
+
+    if (this.state.emailSuccess === null) {
+      emailSuccessMessage = null;
+    }
+
+    return(
+        <form  onSubmit={this.sendEmail}>
+          <div className="top-fields">
+            <div>
+              <label>Name</label>
+              <input
+                name="name"
+                type="text"
+                onChange={this.handleChange}
+                value={this.state.name}
+                required
+              />
+            </div>
+            <div>
+              <label>Email</label>
+              <input
+                name="email"
+                type="email"
+                onChange={this.handleChange}
+                value={this.state.email}
+                required
+              />
+            </div>
+          </div>
+          <div className="textarea">
+            <label>Your Message</label>
+            <textarea
+              name="message"
+              onChange={this.handleChange}
+              value={this.state.message}
               required
             />
           </div>
-          <div>
-            <label>Email</label>
-            <input
-              name="email-address"
-              type="email"
-              required
-            />
-          </div>
-        </div>
-        <div className="textarea">
-          <label>Your Message</label>
-          <textarea
-            name="message"
-            required
+          <input
+            type="submit"
+            value="Submit"
           />
-        </div>
-        <input
-          type="submit"
-          value="Submit"
-        />
-      </form>
-  )
+          <p style={{
+            textAlign: 'center',
+            color: `${emailMessageColour}`
+          }}>{emailSuccessMessage}</p>
+        </form>
+    )
+  }
 }
+
 export default Form
