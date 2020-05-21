@@ -38,5 +38,13 @@
     "img": "https://raw.githubusercontent.com/Nathanavie/2020portfolio/master/src/assets/MemeGenerator.png",
     "GitHubLink": "https://github.com/Nathanavie/ReactNative",
     "DemoLink": "https://expo.io/dashboard/nathanavie/builds/769e0995-7774-4ebe-88cb-a0a97b401002"
+  },
+  {
+    "id":6,
+    "name": "Random Word Definition Generator Web App",
+    "desc": "A ReactJS project that fetches a random word from a RESTFUL API and then compares this word to another RESTFUL API from Merriam-Webster that will return the relevant definition.",
+    "img": "https://raw.githubusercontent.com/Nathanavie/2020portfolio/master/src/assets/RandomDefinition.png",
+    "GitHubLink": "https://github.com/Nathanavie/RandomWordProject",
+    "DemoLink": "https://randomdefinition.netlify.app/"
   }
 ]
