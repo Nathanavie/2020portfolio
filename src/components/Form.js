@@ -106,10 +106,14 @@ class Form extends React.Component {
             type="submit"
             value="Submit"
           />
-          <p style={{
-            textAlign: 'center',
-            color: `${emailMessageColour}`
-          }}>{emailSuccessMessage}</p>
+          <p className="validationMessage"
+              style={{
+                textAlign: 'center',
+                color: `${emailMessageColour}`
+              }}
+          >
+              {emailSuccessMessage}
+          </p>
         </form>
     )
   }

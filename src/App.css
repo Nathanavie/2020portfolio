@@ -310,6 +310,11 @@ input[type="submit"] {
     grid-row: 4;
 }
 
+.validationMessage {
+  grid-column: 1;
+  grid-row: 4;
+}
+
 input[type="submit"]:hover {
   border: 2px solid #797979;
   box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, .3), 0 0.0625rem 0.125rem rgba(0, 0, 0, .2);
@@ -425,6 +430,10 @@ footer a {
     grid-row: 4;
   }
   input[type="submit"] {
-    grid-row: 5;
+    grid-row: 6;
+  }
+  .validationMessage {
+    grid-column: 1;
+    grid-row: 5
   }
 }
