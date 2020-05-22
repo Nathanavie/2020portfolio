@@ -11,27 +11,34 @@ class Form extends React.Component {
       message: '',
       emailSent: false,
       emailSuccess: null,
+      captcha: '',
     }
   }
 
   sendEmail = (e) => {
     e.preventDefault();
-
-    emailjs.sendForm('gmail', 'template_UAlwakRP', e.target, 'user_zW5A3HCHvYgRpgseVZ7bO')
+    if (this.state.captcha === '') {
+      this.setState({
+        emailSuccess: false,
+      })
+    } else {
+      emailjs.sendForm('gmail', 'template_UAlwakRP', e.target, 'user_zW5A3HCHvYgRpgseVZ7bO')
       .then((result) => {
-          console.log('Email sent', result.text);
-          this.setState({
-            emailSuccess: true,
-            name: '',
-            email: '',
-            message: '',
-          })
+        console.log('Email sent', result.text);
+        this.setState({
+          emailSuccess: true,
+          name: '',
+          email: '',
+          message: '',
+        })
       }, (error) => {
-          console.log(error.text);
-          this.setState({
-            emailSuccess: false,
-          })
+        console.log(error.text);
+        this.setState({
+          emailSuccess: false,
+        })
       });
+    }
+
     }
 
     handleChange = event => {
@@ -44,6 +51,9 @@ class Form extends React.Component {
 
     onChange = (value) => {
       console.log('captcha val ', value)
+      this.setState({
+        captcha: value,
+      })
     }
 
 
