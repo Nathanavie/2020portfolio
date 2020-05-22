@@ -1,5 +1,6 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
+import ReCAPTCHA from 'react-google-recaptcha';
 
 class Form extends React.Component {
   constructor(props){
@@ -41,6 +42,10 @@ class Form extends React.Component {
       })
     }
 
+    onChange = (value) => {
+      console.log('captcha val ', value)
+    }
+
 
   render() {
     let emailSuccessMessage = null;
@@ -62,27 +67,31 @@ class Form extends React.Component {
 
     return(
         <form  onSubmit={this.sendEmail}>
-          <div className="top-fields">
-            <div>
-              <label>Name</label>
-              <input
-                name="name"
-                type="text"
-                onChange={this.handleChange}
-                value={this.state.name}
-                required
-              />
-            </div>
-            <div>
-              <label>Email</label>
-              <input
-                name="email"
-                type="email"
-                onChange={this.handleChange}
-                value={this.state.email}
-                required
-              />
-            </div>
+          <div className="leftfield">
+            <label>Name</label>
+            <input
+              name="name"
+              type="text"
+              onChange={this.handleChange}
+              value={this.state.name}
+              required
+            />
+          </div>
+          <div className="leftfield">
+            <label>Email</label>
+            <input
+              name="email"
+              type="email"
+              onChange={this.handleChange}
+              value={this.state.email}
+              required
+            />
+          </div>
+          <div className="leftfield captcha">
+            <ReCAPTCHA
+              sitekey="6LeM5voUAAAAAEOd9jSAjiUsqDshsKSWMnfvIMjC"
+              onChange={this.onChange}
+            />
           </div>
           <div className="textarea">
             <label>Your Message</label>
