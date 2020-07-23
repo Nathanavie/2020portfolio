@@ -225,7 +225,7 @@ nav {
   width: 75%;
   margin: 16% auto 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .project .links a {
@@ -235,6 +235,7 @@ nav {
   border: solid 0.5px #fff;
   padding: 10px;
   transition: 0.4s;
+  margin: 0 15px 0px;
 }
 
 .project .links a:hover {

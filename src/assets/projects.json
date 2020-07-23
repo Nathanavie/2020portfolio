@@ -5,7 +5,7 @@
     "desc": "A News website created in ReactJS, utilising the NewsAPI to collate news stories based on country or keyword",
     "img": "https://raw.githubusercontent.com/Nathanavie/2020portfolio/master/src/assets/news-by-nathan.png",
     "GitHubLink": "https://github.com/Nathanavie/react-news-articles",
-    "DemoLink": "https://news-by-nathan.netlify.app/"
+    "DemoLink": null
   },
   {
     "id":2,
