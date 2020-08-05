@@ -30,7 +30,7 @@ const Content = props => {
         <h3>{project.name}</h3>
         <p>{project.desc}</p>
         <div className="links">
-          <a target="_blank" rel="noopener noreferrer" href={project.GitHubLink}>GitHub</a>
+          {project.GitHubLink != null ? <a target="_blank" rel="noopener noreferrer" href={project.GitHubLink}>GitHub</a> : ''}
           {project.DemoLink != null ? <a target="_blank" rel="noopener noreferrer" href={project.DemoLink}>Demo</a> : ''}
         </div>
       </div>
