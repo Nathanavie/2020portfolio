@@ -54,5 +54,13 @@
     "img": "https://raw.githubusercontent.com/Nathanavie/2020portfolio/master/src/assets/MatchTheWord.png",
     "GitHubLink": "https://github.com/Nathanavie/GuessTheWord",
     "DemoLink": "https://matchtheword.netlify.app/"
+  },
+  {
+    "id":7,
+    "name": "RR Electricals Website",
+    "desc": "A client website built in HTML and CSS with Javascript elements throughout the page.",
+    "img": "https://raw.githubusercontent.com/Nathanavie/2020portfolio/master/src/assets/RRElectrical.png",
+    "GitHubLink": null,
+    "DemoLink": "https://www.rrelectricalservices.co.uk/"
   }
 ]
