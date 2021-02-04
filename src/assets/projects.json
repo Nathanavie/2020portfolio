@@ -1,11 +1,11 @@
 [
   {
     "id":1,
-    "name": "News By Nathan",
-    "desc": "A News website created in ReactJS, utilising the NewsAPI to collate news stories based on country or keyword",
-    "img": "https://raw.githubusercontent.com/Nathanavie/2020portfolio/master/src/assets/news-by-nathan.png",
-    "GitHubLink": "https://github.com/Nathanavie/react-news-articles",
-    "DemoLink": null
+    "name": "Custom cypress commands npm package",
+    "desc": "An npm package that allows the user to import a range of custom commands that will shorten the syntax used in automated tests.",
+    "img": "https://raw.githubusercontent.com/Nathanavie/2020portfolio/master/src/assets/npmLogo.jpg",
+    "GitHubLink": "https://github.com/Nathanavie/cypress-custom-commands",
+    "DemoLink": "https://www.npmjs.com/package/custom-cypress-commands"
   },
   {
     "id":2,
@@ -56,19 +56,19 @@
     "DemoLink": "https://matchtheword.netlify.app/"
   },
   {
+    "id":6,
+    "name": "News By Nathan",
+    "desc": "A News website created in ReactJS, utilising the NewsAPI to collate news stories based on country or keyword",
+    "img": "https://raw.githubusercontent.com/Nathanavie/2020portfolio/master/src/assets/news-by-nathan.png",
+    "GitHubLink": "https://github.com/Nathanavie/react-news-articles",
+    "DemoLink": null
+  },
+  {
     "id":7,
     "name": "RR Electricals Website",
     "desc": "A client website built in HTML and CSS with Javascript elements throughout the page.",
     "img": "https://raw.githubusercontent.com/Nathanavie/2020portfolio/master/src/assets/RRElectrical.png",
     "GitHubLink": null,
     "DemoLink": "https://www.rrelectricalservices.co.uk/"
-  },
-  {
-    "id":8,
-    "name": "Custom cypress commands npm package",
-    "desc": "An npm package that allows the user to import a range of custom commands that will shorten the syntax used in automated tests.",
-    "img": "https://raw.githubusercontent.com/Nathanavie/2020portfolio/master/src/assets/npmLogo.jpg",
-    "GitHubLink": "https://github.com/Nathanavie/cypress-custom-commands",
-    "DemoLink": "https://www.npmjs.com/package/custom-cypress-commands"
   }
 ]

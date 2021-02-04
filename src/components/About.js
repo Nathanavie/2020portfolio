@@ -10,6 +10,7 @@ class Intro extends React.Component {
         <div className="about-text sb2 box">
           <h1>{data[1].title}</h1>
           <p>{data[1].wording}</p>
+          <p>{data[1].secondWording}</p>
           <p>{data[1].freelance}<a href="#contact">drop me a line.</a></p>
         </div>
         <img src={nathan} alt="nathan" className="nathanFaceQ" />
