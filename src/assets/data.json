@@ -8,7 +8,7 @@
  },
  {
      "title": "About Me",
-     "wording": "I'm Nathan, I am a web developer based in Manchester, with one year commercial experience under my belt! I have been developing websites since 2016 and I have a first class degree in Web Design and Development. I have experience in using, HTML5, CSS3, and JavaScript ranging from JQuery all the way to ReactJS, and React Native!",
+     "wording": "I'm Nathan, I am a web developer based in Manchester! I have been developing websites since 2016 and I have a first class degree in Web Design and Development. I have experience in using, HTML5, CSS3, and JavaScript ranging from JQuery all the way to ReactJS, and React Native!",
      "secondWording": "I also have experience with automation testing, creating a range of tests using Cypress to test the front end of applications. This has also led to me creating a small framework that sits on top of Cypress to allow tests to be created more easily. You can also find an npm package of some custom cypress commands in the projects below!",
      "freelance": "I am available for freelance work, if you would like to use my services be sure to "
  }
